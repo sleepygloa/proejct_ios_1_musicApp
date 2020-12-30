@@ -3,12 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0EDE5CC4ACD192C40D22BE /* Pods_SongSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89A5EE3C56C67AC98B37050 /* Pods_SongSearch.framework */; };
+		8EA077C5259C35E800EF83C7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA077C4259C35E800EF83C7 /* HistoryViewController.swift */; };
+		8EA077E5259C401000EF83C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA077E4259C401000EF83C7 /* Main.storyboard */; };
+		8EB383B6259B841A00437222 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB383B5259B841A00437222 /* FirebaseManager.swift */; };
+		8EB383C3259B86B900437222 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB383C2259B86B900437222 /* HistoryCell.swift */; };
+		8EB383C6259B86DC00437222 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB383C5259B86DC00437222 /* HeaderView.swift */; };
+		8EB383C9259B86F400437222 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB383C8259B86F300437222 /* HeaderView.xib */; };
+		8EB383DE259B88F800437222 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EB383DD259B88F800437222 /* GoogleService-Info.plist */; };
 		9403E084225330A100ECBA7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403E083225330A100ECBA7F /* AppDelegate.swift */; };
-		9403E089225330A100ECBA7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9403E087225330A100ECBA7F /* Main.storyboard */; };
 		9403E08B225330A400ECBA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9403E08A225330A400ECBA7F /* Assets.xcassets */; };
 		9403E08E225330A400ECBA7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9403E08C225330A400ECBA7F /* LaunchScreen.storyboard */; };
 		9479CD4A2253A80000938F16 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479CD492253A80000938F16 /* SearchViewController.swift */; };
@@ -16,16 +23,39 @@
 		9479CD4E2253AAFE00938F16 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9479CD4D2253AAFE00938F16 /* Track.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		8EB383B8259B84C200437222 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist.strings;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyStrings\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
+		0B7DECD3DB09BAD1786A9E07 /* Pods-SongSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongSearch.debug.xcconfig"; path = "Target Support Files/Pods-SongSearch/Pods-SongSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		8EA077C4259C35E800EF83C7 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		8EA077E4259C401000EF83C7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8EB383B5259B841A00437222 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		8EB383C2259B86B900437222 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		8EB383C5259B86DC00437222 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8EB383C8259B86F300437222 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		8EB383DD259B88F800437222 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9403E080225330A100ECBA7F /* SongSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9403E083225330A100ECBA7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9403E088225330A100ECBA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9403E08A225330A400ECBA7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9403E08D225330A400ECBA7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9403E08F225330A400ECBA7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9479CD492253A80000938F16 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9479CD4B2253A8EE00938F16 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		9479CD4D2253AAFE00938F16 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		B89A5EE3C56C67AC98B37050 /* Pods_SongSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SongSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8339C30A1F478FFF36A0D2 /* Pods-SongSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SongSearch.release.xcconfig"; path = "Target Support Files/Pods-SongSearch/Pods-SongSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0EDE5CC4ACD192C40D22BE /* Pods_SongSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +75,8 @@
 			children = (
 				9403E082225330A100ECBA7F /* SongSearch */,
 				9403E081225330A100ECBA7F /* Products */,
+				D9EF2FEF52B928E031A43D7F /* Pods */,
+				D58296BCAFB40BEBB77A0785 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,8 +95,9 @@
 				9479CD512253B6E100938F16 /* Controller */,
 				9479CD4F2253B6B600938F16 /* Model */,
 				9479CD502253B6C900938F16 /* View */,
-				9403E087225330A100ECBA7F /* Main.storyboard */,
 				9403E08A225330A400ECBA7F /* Assets.xcassets */,
+				8EA077E4259C401000EF83C7 /* Main.storyboard */,
+				8EB383DD259B88F800437222 /* GoogleService-Info.plist */,
 				9403E08C225330A400ECBA7F /* LaunchScreen.storyboard */,
 				9403E08F225330A400ECBA7F /* Info.plist */,
 			);
@@ -82,6 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				9479CD4B2253A8EE00938F16 /* ResultCell.swift */,
+				8EB383C8259B86F300437222 /* HeaderView.xib */,
+				8EB383C2259B86B900437222 /* HistoryCell.swift */,
+				8EB383C5259B86DC00437222 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,8 +127,27 @@
 			isa = PBXGroup;
 			children = (
 				9479CD492253A80000938F16 /* SearchViewController.swift */,
+				8EA077C4259C35E800EF83C7 /* HistoryViewController.swift */,
+				8EB383B5259B841A00437222 /* FirebaseManager.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D58296BCAFB40BEBB77A0785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89A5EE3C56C67AC98B37050 /* Pods_SongSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9EF2FEF52B928E031A43D7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B7DECD3DB09BAD1786A9E07 /* Pods-SongSearch.debug.xcconfig */,
+				ED8339C30A1F478FFF36A0D2 /* Pods-SongSearch.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,11 +157,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9403E092225330A400ECBA7F /* Build configuration list for PBXNativeTarget "SongSearch" */;
 			buildPhases = (
+				6CEB6F7083C2FCB0B7859097 /* [CP] Check Pods Manifest.lock */,
 				9403E07C225330A100ECBA7F /* Sources */,
 				9403E07D225330A100ECBA7F /* Frameworks */,
 				9403E07E225330A100ECBA7F /* Resources */,
+				55252EEDEAFEE258456CFF54 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
+				8EB383B8259B84C200437222 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -121,8 +180,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = joonwon.lee;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = comfunny;
 				TargetAttributes = {
 					9403E07F225330A100ECBA7F = {
 						CreatedOnToolsVersion = 10.2;
@@ -153,12 +212,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				9403E08E225330A400ECBA7F /* LaunchScreen.storyboard in Resources */,
+				8EA077E5259C401000EF83C7 /* Main.storyboard in Resources */,
 				9403E08B225330A400ECBA7F /* Assets.xcassets in Resources */,
-				9403E089225330A100ECBA7F /* Main.storyboard in Resources */,
+				8EB383DE259B88F800437222 /* GoogleService-Info.plist in Resources */,
+				8EB383C9259B86F400437222 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55252EEDEAFEE258456CFF54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SongSearch/Pods-SongSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SongSearch/Pods-SongSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SongSearch/Pods-SongSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CEB6F7083C2FCB0B7859097 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SongSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9403E07C225330A100ECBA7F /* Sources */ = {
@@ -166,23 +269,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				9479CD4A2253A80000938F16 /* SearchViewController.swift in Sources */,
+				8EB383C3259B86B900437222 /* HistoryCell.swift in Sources */,
 				9403E084225330A100ECBA7F /* AppDelegate.swift in Sources */,
+				8EB383B6259B841A00437222 /* FirebaseManager.swift in Sources */,
 				9479CD4C2253A8EE00938F16 /* ResultCell.swift in Sources */,
 				9479CD4E2253AAFE00938F16 /* Track.swift in Sources */,
+				8EB383C6259B86DC00437222 /* HeaderView.swift in Sources */,
+				8EA077C5259C35E800EF83C7 /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9403E087225330A100ECBA7F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9403E088225330A100ECBA7F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9403E08C225330A400ECBA7F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,6 +319,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -281,6 +381,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -312,17 +413,20 @@
 		};
 		9403E093225330A400ECBA7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7DECD3DB09BAD1786A9E07 /* Pods-SongSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C98APEMDUR;
+				DEVELOPMENT_TEAM = MGZ9CPP37W;
 				INFOPLIST_FILE = SongSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joonwon.lee.SongSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comfunny.SongSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -330,17 +434,20 @@
 		};
 		9403E094225330A400ECBA7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED8339C30A1F478FFF36A0D2 /* Pods-SongSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C98APEMDUR;
+				DEVELOPMENT_TEAM = MGZ9CPP37W;
 				INFOPLIST_FILE = SongSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joonwon.lee.SongSearch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.comfunny.SongSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

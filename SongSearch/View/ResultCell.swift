@@ -2,8 +2,8 @@
 //  ResultCell.swift
 //  SongSearch
 //
-//  Created by joonwon lee on 02/04/2019.
-//  Copyright © 2019 joonwon.lee. All rights reserved.
+//  Created by seonho Kim on 2020/12/30.
+//  Copyright © 2020 comfunny. All rights reserved.
 //
 
 import UIKit
